@@ -5,4 +5,23 @@
 
 # **gRPC - Introducción a desarrolladores ASP.NET Core**
 
-TODO
+## **Presentation (pdf in Spanish)**
+
+[NetCoreConf 2021 - Presentation](presentation.pdf)
+
+## **Samples**
+
+* [GrpcHelloWorld](src/GrpcHelloWorld)
+ 
+> Typical gRPC *Hello World* sample that is shown in the talk
+```
+Client => .NET Core 3.1
+Server => .NET 5
+```
+
+* [GrpcDemo](src/GrpcDemo)
+> gRPC sample that is shown in the talk (using **Unary, Server Streaming, Client Streaming, Bidirectional Streaming**)
+```
+Client => .NET 5
+Server => .NET 5
+```
