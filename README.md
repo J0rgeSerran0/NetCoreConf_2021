@@ -11,7 +11,7 @@
 
 ## **Samples**
 
-* [GrpcHelloWorld](src/GrpcHelloWorld)
+### **[GrpcHelloWorld](src/GrpcHelloWorld)**
  
 > Typical gRPC *Hello World* sample that is shown in the talk (using **Unary**)
 ```
@@ -21,7 +21,7 @@ Server => .NET 5
 
 [protobuf file](src/GrpcHelloWorld/GrpcHelloWorldService/Protos/greet.proto)
 
-* [GrpcDemo](src/GrpcDemo)
+### **[GrpcDemo](src/GrpcDemo)**
 > gRPC sample that is shown in the talk (using **Unary, Server Streaming, Client Streaming, Bidirectional Streaming**)
 ```
 Client => .NET 5
