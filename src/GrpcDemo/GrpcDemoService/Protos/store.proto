@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "GrpcDemo";
+
+package acme.api.acme.v1;
+
+service Store {
+  rpc GetByName (StoreRequest) returns (StoreSummaryReply);
+  rpc AddImage(stream ImageRequest) returns (StatusReply);
+  rpc GetAll (google.protobuf.Empty) returns (stream StoreReply);
+  rpc AddItems(stream NewItemRequest) returns (stream StoreSummaryReply);
+}
+
+message StoreRequest {
+  string name = 1;
+}
+
+message ImageRequest {
+	bytes image = 1;
+}
+
+message NewItemRequest {
+  string name = 1;
+  int32 price = 2;
+  string currencyCode = 3;
+}
+
+message StoreSummaryReply {
+  string name = 1;
+  string price = 2;
+}
+
+message StoreReply {
+  string name = 1;
+  int32 price = 2;
+  string currencyCode = 3;
+}
+
+message StatusReply {
+	bool isOk = 1;
+}

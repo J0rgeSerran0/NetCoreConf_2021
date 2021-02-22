@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/src/GrpcHelloWorld/GrpcHelloWorldClient/obj
+/src/GrpcHelloWorld/GrpcHelloWorldService/obj
+/src/GrpcDemo/GrpcDemoClient/obj
+/src/GrpcDemo/GrpcDemoService/obj

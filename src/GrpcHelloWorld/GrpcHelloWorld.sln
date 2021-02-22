@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHelloWorldService", "GrpcHelloWorldService\GrpcHelloWorldService.csproj", "{0C953568-1427-4514-B211-B191D7A78B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHelloWorldClient", "GrpcHelloWorldClient\GrpcHelloWorldClient.csproj", "{5032B39E-F4E6-48F5-9D43-4985ABB7A0A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C953568-1427-4514-B211-B191D7A78B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C953568-1427-4514-B211-B191D7A78B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C953568-1427-4514-B211-B191D7A78B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C953568-1427-4514-B211-B191D7A78B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5032B39E-F4E6-48F5-9D43-4985ABB7A0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5032B39E-F4E6-48F5-9D43-4985ABB7A0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5032B39E-F4E6-48F5-9D43-4985ABB7A0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5032B39E-F4E6-48F5-9D43-4985ABB7A0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0610E5A-6030-4DD9-A075-9750DC06FAE0}
+	EndGlobalSection
+EndGlobal
