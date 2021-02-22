@@ -19,9 +19,13 @@ Client => .NET Core 3.1
 Server => .NET 5
 ```
 
+[protobuf file](src/GrpcHelloWorld/GrpcHelloWorldService/Protos/greet.proto)
+
 * [GrpcDemo](src/GrpcDemo)
 > gRPC sample that is shown in the talk (using **Unary, Server Streaming, Client Streaming, Bidirectional Streaming**)
 ```
 Client => .NET 5
 Server => .NET 5
 ```
+
+[protobuf file](src/GrpcDemo/GrpcDemoService/Protos/store.proto)
