@@ -13,7 +13,7 @@
 
 * [GrpcHelloWorld](src/GrpcHelloWorld)
  
-> Typical gRPC *Hello World* sample that is shown in the talk
+> Typical gRPC *Hello World* sample that is shown in the talk (using **Unary**)
 ```
 Client => .NET Core 3.1
 Server => .NET 5
