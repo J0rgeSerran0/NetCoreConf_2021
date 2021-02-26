@@ -26,19 +26,19 @@ Important parts in the sample:
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    **services.AddGrpc();**
+    services.AddGrpc();
 }
 
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     // MORE CODE HERE
 
-    *app.UseStaticFiles();*
-    *app.UseRouting();*
+    app.UseStaticFiles();
+    app.UseRouting();
 
     app.UseEndpoints(endpoints =>
     {
-        **endpoints.MapGrpcService<GreeterService>();**
+        endpoints.MapGrpcService<GreeterService>();
 
         // MORE CODE HERE
     });
@@ -59,19 +59,19 @@ Important parts in the sample:
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    **services.AddGrpc();**
-    *services.AddSingleton<StoreRepository>();*
+    services.AddGrpc();
+    services.AddSingleton<StoreRepository>();
 }
 
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     // MORE CODE HERE
 
-    *app.UseRouting();*
+    app.UseRouting();
 
     app.UseEndpoints(endpoints =>
     {
-        **endpoints.MapGrpcService<StoreService>();**
+        endpoints.MapGrpcService<StoreService>();
 
         // MORE CODE HERE
     });
