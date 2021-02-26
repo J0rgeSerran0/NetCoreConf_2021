@@ -57,6 +57,8 @@ Server => .NET 5
 
 [protobuf file](src/GrpcDemo/GrpcDemoService/Protos/store.proto)
 
+**Startup.cs**
+
 Important parts in the sample:
 
 ```csharp
