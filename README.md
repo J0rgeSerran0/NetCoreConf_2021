@@ -19,6 +19,8 @@ Client => .NET Core 3.1
 Server => .NET 5
 ```
 
+[protobuf file](src/GrpcHelloWorld/GrpcHelloWorldService/Protos/greet.proto)
+
 **Startup.cs**
 
 Important parts in the sample:
@@ -45,7 +47,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-[protobuf file](src/GrpcHelloWorld/GrpcHelloWorldService/Protos/greet.proto)
 
 ### **[GrpcDemo](src/GrpcDemo)**
 > gRPC sample that is shown in the talk (using **Unary, Server Streaming, Client Streaming, Bidirectional Streaming**)
@@ -53,6 +54,8 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 Client => .NET 5
 Server => .NET 5
 ```
+
+[protobuf file](src/GrpcDemo/GrpcDemoService/Protos/store.proto)
 
 Important parts in the sample:
 
@@ -77,5 +80,3 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     });
 }
 ```
-
-[protobuf file](src/GrpcDemo/GrpcDemoService/Protos/store.proto)
