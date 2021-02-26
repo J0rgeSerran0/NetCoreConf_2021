@@ -19,6 +19,32 @@ Client => .NET Core 3.1
 Server => .NET 5
 ```
 
+**Startup.cs**
+
+Important parts in the sample:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    **services.AddGrpc();**
+}
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    // MORE CODE HERE
+
+    *app.UseStaticFiles();*
+    *app.UseRouting();*
+
+    app.UseEndpoints(endpoints =>
+    {
+        **endpoints.MapGrpcService<GreeterService>();**
+
+        // MORE CODE HERE
+    });
+}
+```
+
 [protobuf file](src/GrpcHelloWorld/GrpcHelloWorldService/Protos/greet.proto)
 
 ### **[GrpcDemo](src/GrpcDemo)**
@@ -26,6 +52,30 @@ Server => .NET 5
 ```
 Client => .NET 5
 Server => .NET 5
+```
+
+Important parts in the sample:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    **services.AddGrpc();**
+    *services.AddSingleton<StoreRepository>();*
+}
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    // MORE CODE HERE
+
+    *app.UseRouting();*
+
+    app.UseEndpoints(endpoints =>
+    {
+        **endpoints.MapGrpcService<StoreService>();**
+
+        // MORE CODE HERE
+    });
+}
 ```
 
 [protobuf file](src/GrpcDemo/GrpcDemoService/Protos/store.proto)
