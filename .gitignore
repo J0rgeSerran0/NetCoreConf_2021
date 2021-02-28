@@ -7,3 +7,5 @@
 /src/GrpcHelloWorld/GrpcHelloWorldService/obj
 /src/GrpcDemo/GrpcDemoClient/obj
 /src/GrpcDemo/GrpcDemoService/obj
+/src/GrpcDemo/GrpcDemoService/bin/Debug/net5.0
+/src/GrpcDemo/GrpcDemoClient/bin/Debug/net5.0
