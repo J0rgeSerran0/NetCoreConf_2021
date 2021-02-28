@@ -4,7 +4,7 @@ import "google/protobuf/empty.proto";
 
 option csharp_namespace = "GrpcDemo";
 
-package acme.api.acme.v1;
+package acme.api.v1;
 
 service Store {
   rpc GetByName (StoreRequest) returns (StoreSummaryReply);
